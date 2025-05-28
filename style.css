@@ -10,14 +10,61 @@
   max-width: 1100px;
   margin: 0 auto;
   padding: 0 2%;
+  flex-wrap: wrap;
 }
 
 section.main {
-  background-image: url("images/bg.svg");
-  filter: brightness(0) saturate(100%) invert(13%) sepia(7%) saturate(1042%)
-    hue-rotate(169deg) brightness(98%) contrast(92%);
+  background-image: url("images/bgmod.svg");
   background-position: center;
   background-size: cover;
   min-height: 700px;
   padding: 20px 0 80px 0;
+}
+
+.menu {
+  display: flex;
+  width: 100%;
+}
+
+.logo-menu {
+  width: 50%;
+}
+
+.items-menu {
+  width: 50%;
+  text-align: center;
+}
+
+.items-menu a {
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.items-menu a:hover {
+  border-bottom: 4px solid #1d5b41;
+}
+
+.items-menu a.contact-btn {
+  background-color: #1d5b41;
+  padding: 10px 10px;
+  border-radius: 10px;
+}
+
+.mockup {
+  display: block;
+  width: 100%;
+  color: white;
+  text-align: center;
+  padding-top: 100px;
+}
+
+.mockup h1 {
+  font-size: 50px;
+}
+
+.mockup img {
+  max-width: 100%;
 }
