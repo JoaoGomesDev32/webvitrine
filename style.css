@@ -14,7 +14,7 @@
 }
 
 section.main {
-  background-image: url("images/bgmod.svg");
+  background-image: url("images/bg.svg");
   background-position: center;
   background-size: cover;
   min-height: 700px;
@@ -121,6 +121,37 @@ section.porque-nos > .center {
   font-size: 13px;
   color: #7e92ac;
   margin-bottom: 20px;
+}
+
+section.cta {
+  background-image: url("images/banner_atualizado.svg");
+  background-position: center;
+  background-size: cover;
+  padding: 20px 10px;
+  min-height: 200px;
+  color: white;
+  text-align: center;
+}
+
+section.cta h2,
+section.cta h4 {
+  font-weight: normal;
+  margin: 10px 0;
+}
+
+section.cta h2 {
+  font-size: 40px;
+}
+
+section.cta a {
+  display: inline-block;
+  background-color: #1d5b41;
+  color: white;
+  padding: 8px 15px;
+  font-size: 17px;
+  border-radius: 7px;
+  text-decoration: none;
+  font-weight: bold;
 }
 
 @media screen and (max-width: 768px) {
