@@ -41,10 +41,11 @@ section.main {
   text-decoration: none;
   display: inline-block;
   margin: 0 10px;
+  box-sizing: border-box;
 }
 
 .items-menu a:hover {
-  border-bottom: 4px solid #1d5b41;
+  border-bottom: 2px solid #1d5b41;
 }
 
 .items-menu a.contact-btn {
@@ -320,6 +321,31 @@ section.contato form {
   border-radius: 10px;
 }
 
+footer {
+  padding: 10px 0;
+  background: #212529;
+  color: white;
+}
+
+.text-footer {
+  width: 50%;
+  padding: 8px 0;
+}
+
+.items-menu-mobile {
+  width: 50%;
+  text-align: right;
+  display: none;
+}
+
+.items-menu-mobile i {
+  color: white;
+  position: relative;
+  top: 15px;
+  font-size: 23px;
+  cursor: pointer;
+}
+
 @media screen and (max-width: 768px) {
   /* .menu {
     flex-direction: column;
@@ -339,6 +365,45 @@ section.contato form {
   .mockup h1 {
     font-size: 36px;
   } */
+
+  .items-menu-mobile {
+    display: block;
+  }
+
+  .menu-mobile {
+    opacity: 0;
+    transition: 1s;
+    position: absolute;
+    left: 0;
+    top: 65px;
+    background-color: white;
+    width: 100%;
+    padding: 15px 0;
+    text-align: center;
+  }
+
+  .show {
+    opacity: 1;
+  }
+
+  .hide {
+    opacity: 0;
+  }
+
+  .menu-mobile a {
+    text-align: center;
+    display: block;
+    margin: 10px 0;
+    color: #1d5b41;
+    text-decoration: none;
+    font-weight: bold;
+    border-bottom: 1px solid #1d5b41;
+    padding: 8px 0;
+  }
+
+  section.main .items-menu {
+    display: none;
+  }
 
   .lista-beneficios,
   .img-beneficios {
@@ -365,5 +430,22 @@ section.contato form {
   section.marcas img {
     max-width: 400px;
     width: 100%;
+  }
+
+  footer .items-menu {
+    width: 100%;
+    text-align: center;
+  }
+
+  footer .items-menu a {
+    display: block;
+    margin: 10px 0;
+    text-align: center;
+  }
+
+  .text-footer {
+    width: 100%;
+    text-align: center;
+    padding: 8px 0;
   }
 }
